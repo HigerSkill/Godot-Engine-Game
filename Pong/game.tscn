@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://game.gd" type="Script" id=1]
+[ext_resource path="res://left.png" type="Texture" id=2]
+[ext_resource path="res://right.png" type="Texture" id=3]
+[ext_resource path="res://sep.png" type="Texture" id=4]
+[ext_resource path="res://ball.png" type="Texture" id=5]
+
+[node name="game" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="left" type="Sprite" parent="."]
+
+transform/pos = Vector2( 50, 200 )
+texture = ExtResource( 2 )
+offset = Vector2( -7.84781, 0.257507 )
+
+[node name="right" type="Sprite" parent="."]
+
+transform/pos = Vector2( 588.792, 199.037 )
+texture = ExtResource( 3 )
+offset = Vector2( 8.39426, 0.908829 )
+
+[node name="separator" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 200 )
+transform/scale = Vector2( 0.52725, 0.456501 )
+texture = ExtResource( 4 )
+
+[node name="ball" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 200 )
+texture = ExtResource( 5 )
+
+
